@@ -16,11 +16,12 @@
 			$(".final").hide();
 
 
-const cards = document.querySelectorAll('.memory-card');
-let hasFlippedCard=false;
+var cards = document.querySelectorAll('.memory-card');
+var hasFlippedCard=false;
 
-let lockBoard=false;
-let firstCard,secondCard;
+var lockBoard=false;
+var firstCard;
+var secondCard;
 
 function flipCard() {
 	if (lockBoard) return;
